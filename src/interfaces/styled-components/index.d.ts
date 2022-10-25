@@ -8,6 +8,7 @@ export type Colors =
   | 'primary'
   | 'secondary'
   | 'white'
+  | 'background'
   | 'black100'
   | 'black600';
 

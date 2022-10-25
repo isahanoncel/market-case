@@ -6,6 +6,7 @@ export const COLORS = {
   secondary: '#147594',
   black100: '#E0E0E0',
   black600: '#525252',
+  background: '#E5E5E5',
 };
 
 export const FONTS = {

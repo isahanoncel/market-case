@@ -1,12 +1,8 @@
 import React from 'react';
-import Header from '../../components/organisms/Header';
+import HomeTemplate from '../../components/templates/HomeTemplate';
 
 const Home = () => {
-  return (
-    <div>
-      <Header />
-    </div>
-  );
+  return <HomeTemplate />;
 };
 
 export default Home;
