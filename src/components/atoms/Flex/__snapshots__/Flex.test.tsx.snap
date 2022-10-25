@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Flex snapshot testing 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c0 {
+    height: auto;
+  }
+}
+
+<div
+  className="c0"
+>
+  Flex
+</div>
+`;
