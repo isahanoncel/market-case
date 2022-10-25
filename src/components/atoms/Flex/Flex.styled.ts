@@ -11,7 +11,6 @@ export interface IFlexContainer {
 
 export const FlexContainer = styled.div<IFlexContainer>`
   display: flex;
-  height: 100%;
   ${device.mobile} {
     height: auto;
   }

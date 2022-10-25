@@ -6,7 +6,6 @@ exports[`Flex snapshot testing 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
 }
 
 @media (min-width:0px) and (max-width:768px) {

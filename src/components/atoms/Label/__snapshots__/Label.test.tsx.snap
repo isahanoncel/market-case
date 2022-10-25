@@ -3,6 +3,7 @@
 exports[`Label snapshot testing 1`] = `
 .c0 {
   font-size: 22px;
+  line-height: 14px;
   color: #525252;
   font-weight: 600;
   margin: 0;

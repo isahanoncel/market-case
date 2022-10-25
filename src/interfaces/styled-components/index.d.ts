@@ -2,13 +2,16 @@
 import 'styled-components';
 // #endregion Global Imports
 
-export type Icons = 'Bag' | 'ArrowLeft';
+export type Icons = 'Bag' | 'ArrowLeft' | 'Check';
 
 export type Colors =
   | 'primary'
+  | 'gray'
   | 'secondary'
   | 'white'
   | 'background'
+  | 'transparent'
+  | 'innerBorder'
   | 'black100'
   | 'black600';
 

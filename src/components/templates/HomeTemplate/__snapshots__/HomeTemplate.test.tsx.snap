@@ -12,7 +12,6 @@ exports[`HomeTemplate snapshot testing 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -23,11 +22,81 @@ exports[`HomeTemplate snapshot testing 1`] = `
   align-items: center;
 }
 
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c6 {
   font-size: 14px;
+  line-height: 14px;
   color: #fff;
   font-weight: 600;
   margin: 0;
+}
+
+.c10 {
+  font-size: 13px;
+  line-height: 14px;
+  color: #697488;
+  font-weight: 600;
+  margin: 0;
+}
+
+.c14 {
+  font-size: 14px;
+  line-height: 18px;
+  color: #525252;
+  font-weight: 400;
+  margin: 0;
+}
+
+.c11 {
+  background-color: #fff;
+  box-shadow: 0px 6px 24px rgba(93,62,188,0.04);
+  border-radius: 2px;
+  margin-top: 12px;
+  padding: 24px;
+  max-height: 184px;
+  overflow-y: scroll;
+}
+
+.c12 {
+  cursor: pointer;
+  margin-bottom: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #DFDEE2;
+  border-radius: 22px;
+  margin: 0 12px 0 0;
 }
 
 .c5 {
@@ -68,8 +137,32 @@ exports[`HomeTemplate snapshot testing 1`] = `
   background-color: #E5E5E5;
 }
 
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.c8 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 @media (min-width:0px) and (max-width:768px) {
   .c3 {
+    height: auto;
+  }
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c9 {
     height: auto;
   }
 }
@@ -78,6 +171,19 @@ exports[`HomeTemplate snapshot testing 1`] = `
   .c1 {
     position: fixed;
     top: 0;
+  }
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c0 {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c7 {
+    display: block;
+    padding: 10px 16px;
   }
 }
 
@@ -138,7 +244,268 @@ exports[`HomeTemplate snapshot testing 1`] = `
   <div
     className="c2"
   >
-    market app
+    <div
+      className="c7"
+    >
+      <div
+        className="c8"
+      >
+        <div
+          className="c9"
+        >
+          <span
+            className="c10"
+            color="gray"
+            size={13}
+          >
+            Sorting
+          </span>
+          <div
+            className="c11"
+          >
+            <div
+              className="c12"
+              onClick={[Function]}
+            >
+              <div
+                checked={false}
+                className="c13"
+              />
+              <span
+                className="c14"
+                color="black600"
+                size={14}
+              >
+                Price low to high
+              </span>
+            </div>
+            <div
+              className="c12"
+              onClick={[Function]}
+            >
+              <div
+                checked={false}
+                className="c13"
+              />
+              <span
+                className="c14"
+                color="black600"
+                size={14}
+              >
+                Price high to low
+              </span>
+            </div>
+            <div
+              className="c12"
+              onClick={[Function]}
+            >
+              <div
+                checked={false}
+                className="c13"
+              />
+              <span
+                className="c14"
+                color="black600"
+                size={14}
+              >
+                New to old
+              </span>
+            </div>
+            <div
+              className="c12"
+              onClick={[Function]}
+            >
+              <div
+                checked={false}
+                className="c13"
+              />
+              <span
+                className="c14"
+                color="black600"
+                size={14}
+              >
+                Old to new
+              </span>
+            </div>
+          </div>
+        </div>
+        <div>
+          filters
+        </div>
+      </div>
+      <div
+        className="c8"
+      >
+        <div
+          className="c9"
+        >
+          <span
+            className="c10"
+            color="gray"
+            size={13}
+          >
+            Sorting
+          </span>
+          <div
+            className="c11"
+          >
+            <div
+              className="c12"
+              onClick={[Function]}
+            >
+              <div
+                checked={false}
+                className="c13"
+              />
+              <span
+                className="c14"
+                color="black600"
+                size={14}
+              >
+                Price low to high
+              </span>
+            </div>
+            <div
+              className="c12"
+              onClick={[Function]}
+            >
+              <div
+                checked={false}
+                className="c13"
+              />
+              <span
+                className="c14"
+                color="black600"
+                size={14}
+              >
+                Price high to low
+              </span>
+            </div>
+            <div
+              className="c12"
+              onClick={[Function]}
+            >
+              <div
+                checked={false}
+                className="c13"
+              />
+              <span
+                className="c14"
+                color="black600"
+                size={14}
+              >
+                New to old
+              </span>
+            </div>
+            <div
+              className="c12"
+              onClick={[Function]}
+            >
+              <div
+                checked={false}
+                className="c13"
+              />
+              <span
+                className="c14"
+                color="black600"
+                size={14}
+              >
+                Old to new
+              </span>
+            </div>
+          </div>
+        </div>
+        <div>
+          filters
+        </div>
+      </div>
+      <div
+        className="c8"
+      >
+        <div
+          className="c9"
+        >
+          <span
+            className="c10"
+            color="gray"
+            size={13}
+          >
+            Sorting
+          </span>
+          <div
+            className="c11"
+          >
+            <div
+              className="c12"
+              onClick={[Function]}
+            >
+              <div
+                checked={false}
+                className="c13"
+              />
+              <span
+                className="c14"
+                color="black600"
+                size={14}
+              >
+                Price low to high
+              </span>
+            </div>
+            <div
+              className="c12"
+              onClick={[Function]}
+            >
+              <div
+                checked={false}
+                className="c13"
+              />
+              <span
+                className="c14"
+                color="black600"
+                size={14}
+              >
+                Price high to low
+              </span>
+            </div>
+            <div
+              className="c12"
+              onClick={[Function]}
+            >
+              <div
+                checked={false}
+                className="c13"
+              />
+              <span
+                className="c14"
+                color="black600"
+                size={14}
+              >
+                New to old
+              </span>
+            </div>
+            <div
+              className="c12"
+              onClick={[Function]}
+            >
+              <div
+                checked={false}
+                className="c13"
+              />
+              <span
+                className="c14"
+                color="black600"
+                size={14}
+              >
+                Old to new
+              </span>
+            </div>
+          </div>
+        </div>
+        <div>
+          filters
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;

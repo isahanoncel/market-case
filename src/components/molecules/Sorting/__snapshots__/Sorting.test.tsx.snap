@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sorting snapshot testing 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  font-size: 13px;
+  line-height: 14px;
+  color: #697488;
+  font-weight: 600;
+  margin: 0;
+}
+
+.c5 {
+  font-size: 14px;
+  line-height: 18px;
+  color: #525252;
+  font-weight: 400;
+  margin: 0;
+}
+
+.c2 {
+  background-color: #fff;
+  box-shadow: 0px 6px 24px rgba(93,62,188,0.04);
+  border-radius: 2px;
+  margin-top: 12px;
+  padding: 24px;
+  max-height: 184px;
+  overflow-y: scroll;
+}
+
+.c3 {
+  cursor: pointer;
+  margin-bottom: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #DFDEE2;
+  border-radius: 22px;
+  margin: 0 12px 0 0;
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c0 {
+    height: auto;
+  }
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+    color="gray"
+    size={13}
+  >
+    Sorting
+  </span>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+      onClick={[Function]}
+    >
+      <div
+        checked={false}
+        className="c4"
+      />
+      <span
+        className="c5"
+        color="black600"
+        size={14}
+      >
+        Price low to high
+      </span>
+    </div>
+    <div
+      className="c3"
+      onClick={[Function]}
+    >
+      <div
+        checked={false}
+        className="c4"
+      />
+      <span
+        className="c5"
+        color="black600"
+        size={14}
+      >
+        Price high to low
+      </span>
+    </div>
+    <div
+      className="c3"
+      onClick={[Function]}
+    >
+      <div
+        checked={false}
+        className="c4"
+      />
+      <span
+        className="c5"
+        color="black600"
+        size={14}
+      >
+        New to old
+      </span>
+    </div>
+    <div
+      className="c3"
+      onClick={[Function]}
+    >
+      <div
+        checked={false}
+        className="c4"
+      />
+      <span
+        className="c5"
+        color="black600"
+        size={14}
+      >
+        Old to new
+      </span>
+    </div>
+  </div>
+</div>
+`;
