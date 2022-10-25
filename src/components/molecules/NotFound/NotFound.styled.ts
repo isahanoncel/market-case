@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { device } from "../../../constants/styles/GlobalStyle";
-import StyledHelper from "../../../constants/styles/Helper";
+import styled from 'styled-components';
+import { device } from '../../../constants/styles/GlobalStyle';
+import StyledHelper from '../../../constants/styles/Helper';
 
 export const NotFoundWrapper = styled.div`
   width: 100%;
