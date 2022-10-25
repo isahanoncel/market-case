@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input snapshot testing 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  font-size: 14px;
+  color: #E0E0E0;
+  font-weight: 400;
+  margin: 0;
+}
+
+.c0 {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.c3 {
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 15px 5px;
+  color: #E0E0E0;
+  border: 1px solid #E0E0E0;
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c1 {
+    height: auto;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+      color="black100"
+      size={14}
+    >
+      Search...
+    </span>
+    <input
+      className="c3"
+      onChange={[Function]}
+      type="text"
+    />
+  </div>
+</div>
+`;

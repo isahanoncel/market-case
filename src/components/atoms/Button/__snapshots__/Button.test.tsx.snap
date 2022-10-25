@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button snapshot testing 1`] = `
+.c0 {
+  background-color: #1EA4CE;
+  border: none;
+  font-weight: 600;
+  color: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 85px;
+  min-height: 32px;
+}
+
+<button
+  className="c0"
+>
+  Button
+</button>
+`;

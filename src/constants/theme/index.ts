@@ -2,10 +2,10 @@ import { DefaultTheme } from 'styled-components';
 
 export const COLORS = {
   white: '#fff',
-  primary:"#1EA4CE",
-  secondary:'#147594',
-  black100:"#E0E0E0",
-  black600:"#525252"
+  primary: '#1EA4CE',
+  secondary: '#147594',
+  black100: '#E0E0E0',
+  black600: '#525252',
 };
 
 export const FONTS = {

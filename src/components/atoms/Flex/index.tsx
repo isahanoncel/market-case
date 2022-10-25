@@ -3,8 +3,8 @@ import * as S from './Flex.styled';
 
 interface IFlex extends S.IFlexContainer {
   children: React.ReactNode | string;
-  onClick?:() => void;
-  externalCss?:React.CSSProperties
+  onClick?: () => void;
+  externalCss?: React.CSSProperties;
 }
 const Flex: FC<IFlex> = ({
   children,
@@ -14,7 +14,7 @@ const Flex: FC<IFlex> = ({
   margin,
   flex,
   onClick,
-  externalCss
+  externalCss,
 }) => {
   return (
     <S.FlexContainer

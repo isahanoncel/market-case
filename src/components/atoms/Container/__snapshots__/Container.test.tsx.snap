@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container snapshot testing 1`] = `
+.c0 {
+  max-width: 1232px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+<div
+  className="c0"
+>
+  Container
+</div>
+`;

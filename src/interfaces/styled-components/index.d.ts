@@ -2,15 +2,14 @@
 import 'styled-components';
 // #endregion Global Imports
 
-export type Icons =
-  | 'ArrowLeft'
+export type Icons = 'Bag' | 'ArrowLeft';
 
 export type Colors =
   | 'primary'
   | 'secondary'
   | 'white'
   | 'black100'
-  | 'black600'
+  | 'black600';
 
 type Fonts = 'OpenSans';
 

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label snapshot testing 1`] = `
+.c0 {
+  font-size: 22px;
+  color: #525252;
+  font-weight: 600;
+  margin: 0;
+}
+
+<span
+  className="c0"
+  color="black600"
+  size={22}
+>
+  Getir Label
+</span>
+`;

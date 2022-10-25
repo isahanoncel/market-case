@@ -4,7 +4,7 @@ import Button from '.';
 
 export default {
   title: 'Atoms/Button',
-  component: Button
+  component: Button,
 } as ComponentMeta<typeof Button>;
 
 export const Default: ComponentStory<typeof Button> = (args) => (

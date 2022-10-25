@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-interface IStyledButton{
-  backgroundColor?:string
+interface IStyledButton {
+  backgroundColor?: string;
 }
 
 export const StyledButton = styled.button<IStyledButton>`

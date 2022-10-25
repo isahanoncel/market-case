@@ -13,4 +13,3 @@ export const ArrowLeft = Default.bind({});
 ArrowLeft.args = {
   name: 'ArrowLeft',
 };
- 

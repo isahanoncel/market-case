@@ -1,21 +1,12 @@
-import React, { useEffect } from 'react';
-import Container from '../../components/atoms/Container';
-import { useAppDispatch, useAppSelector } from '../../store';
-import { setProducts } from '../../store/slices/products';
+import React from 'react';
+import Header from '../../components/organisms/Header';
 
 const Home = () => {
-  const products = useAppSelector((a) => a.products);
-  const dispatch = useAppDispatch();
-
-  useEffect(() => {
-    dispatch(setProducts([1, 2, 3]));
-  }, []);
-
-  useEffect(() => {
-    console.log(products);
-  }, [products]);
-
-  return <Container>Getir</Container>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 };
 
 export default Home;

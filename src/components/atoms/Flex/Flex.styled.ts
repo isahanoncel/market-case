@@ -1,10 +1,10 @@
-import styled from "styled-components";
-import { device } from "../../../constants/styles/GlobalStyle";
+import styled from 'styled-components';
+import { device } from '../../../constants/styles/GlobalStyle';
 
 export interface IFlexContainer {
-  justifyContent?: "center" | "flex-end" | "flex-start" | "space-between";
-  alignItems?: "center" | "flex-end" | "flex-start";
-  flexDirection?: "column" | "row";
+  justifyContent?: 'center' | 'flex-end' | 'flex-start' | 'space-between';
+  alignItems?: 'center' | 'flex-end' | 'flex-start';
+  flexDirection?: 'column' | 'row';
   flex?: number;
   margin?: string;
 }
