@@ -43,17 +43,6 @@ exports[`HomeTemplate snapshot testing 1`] = `
   flex-direction: column;
 }
 
-.c21 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c6 {
   font-size: 14px;
   line-height: 14px;
@@ -76,22 +65,6 @@ exports[`HomeTemplate snapshot testing 1`] = `
   color: #525252;
   font-weight: 400;
   margin: 0;
-}
-
-.c22 {
-  font-size: 14px;
-  line-height: 14px;
-  color: #525252;
-  font-weight: 600;
-  margin: 0;
-}
-
-.c23 {
-  font-size: 14px;
-  line-height: 14px;
-  color: #A8A8A8;
-  font-weight: 400;
-  margin: 0 0 0 4px;
 }
 
 .c11 {
@@ -176,46 +149,13 @@ exports[`HomeTemplate snapshot testing 1`] = `
   border-radius: 2px;
   margin-top: 12px;
   padding: 24px;
-  max-height: 184px;
-  overflow-y: scroll;
+  max-height: 244px;
+  overflow: hidden;
 }
 
 .c19 {
-  cursor: pointer;
-  margin-bottom: 18px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c19:last-of-type {
-  margin-bottom: 0;
-}
-
-.c20 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 22px;
-  height: 22px;
-  box-shadow: 0px 1px 7px rgba(93,56,192,0.4);
-  border-radius: 2px;
-  margin: 0 8px 0 0;
-  background-color: #1EA4CE;
+  max-height: 131px;
+  overflow-y: scroll;
 }
 
 .c5 {
@@ -288,12 +228,6 @@ exports[`HomeTemplate snapshot testing 1`] = `
 
 @media (min-width:0px) and (max-width:768px) {
   .c17 {
-    height: auto;
-  }
-}
-
-@media (min-width:0px) and (max-width:768px) {
-  .c21 {
     height: auto;
   }
 }
@@ -489,30 +423,7 @@ exports[`HomeTemplate snapshot testing 1`] = `
             </div>
             <div
               className="c19"
-            >
-              <div
-                checked={true}
-                className="c20"
-              />
-              <div
-                className="c21"
-              >
-                <span
-                  className="c22"
-                  color="black600"
-                  size={14}
-                >
-                  test
-                </span>
-                <span
-                  className="c23"
-                  color="thinGray"
-                  size={14}
-                >
-                  (18)
-                </span>
-              </div>
-            </div>
+            />
           </div>
         </div>
         <div
@@ -523,7 +434,7 @@ exports[`HomeTemplate snapshot testing 1`] = `
             color="gray"
             size={13}
           >
-            Brands
+            Tags
           </span>
           <div
             className="c15"
@@ -537,37 +448,14 @@ exports[`HomeTemplate snapshot testing 1`] = `
                 <input
                   className="c18"
                   onChange={[Function]}
-                  placeholder="Search Brands"
+                  placeholder="Search Tags"
                   type="text"
                 />
               </div>
             </div>
             <div
               className="c19"
-            >
-              <div
-                checked={true}
-                className="c20"
-              />
-              <div
-                className="c21"
-              >
-                <span
-                  className="c22"
-                  color="black600"
-                  size={14}
-                >
-                  test
-                </span>
-                <span
-                  className="c23"
-                  color="thinGray"
-                  size={14}
-                >
-                  (18)
-                </span>
-              </div>
-            </div>
+            />
           </div>
         </div>
       </div>

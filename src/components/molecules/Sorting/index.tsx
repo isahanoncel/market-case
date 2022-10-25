@@ -1,18 +1,18 @@
-import React, { FC, useCallback, useMemo, useState } from 'react';
+import React, { FC, useCallback, useMemo } from 'react';
 import Flex from '../../atoms/Flex';
 import Label from '../../atoms/Label';
 import * as S from './Sorting.styled';
 import options from './Sorting.options';
+import { useAppDispatch, useAppSelector } from '../../../store';
+import { setSort } from '../../../store/slices/filter';
 
 const Sorting: FC = () => {
-  const [selectedSorting, setSelectedSorting] = useState<string>('');
+  const sorting = useAppSelector((a) => a.filter.sort);
+  const dispatch = useAppDispatch();
 
-  const handleChangeSorting = useCallback(
-    (item: string) => {
-      setSelectedSorting(item);
-    },
-    [selectedSorting],
-  );
+  const handleChangeSorting = useCallback((item: string) => {
+    dispatch(setSort(item));
+  }, []);
 
   const renderOptions = useMemo(() => {
     return options.map((item) => (
@@ -20,8 +20,8 @@ const Sorting: FC = () => {
         key={item.type}
         onClick={() => handleChangeSorting(item.type)}
       >
-        <S.SortingRadio checked={selectedSorting === item.type}>
-          {item.type === selectedSorting && (
+        <S.SortingRadio checked={sorting === item.type}>
+          {item.type === sorting && (
             <svg
               width="10"
               height="7"
@@ -44,7 +44,7 @@ const Sorting: FC = () => {
         </Label>
       </S.SortingItem>
     ));
-  }, [selectedSorting]);
+  }, [sorting]);
 
   return (
     <Flex flexDirection="column" margin="24px 0 0 0">

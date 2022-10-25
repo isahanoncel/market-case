@@ -22,7 +22,7 @@ exports[`FilterBox snapshot testing 1`] = `
   flex-direction: column;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -70,7 +70,7 @@ exports[`FilterBox snapshot testing 1`] = `
   margin: 0;
 }
 
-.c9 {
+.c10 {
   font-size: 14px;
   line-height: 14px;
   color: #525252;
@@ -78,7 +78,7 @@ exports[`FilterBox snapshot testing 1`] = `
   margin: 0;
 }
 
-.c10 {
+.c11 {
   font-size: 14px;
   line-height: 14px;
   color: #A8A8A8;
@@ -92,11 +92,16 @@ exports[`FilterBox snapshot testing 1`] = `
   border-radius: 2px;
   margin-top: 12px;
   padding: 24px;
-  max-height: 184px;
-  overflow-y: scroll;
+  max-height: 244px;
+  overflow: hidden;
 }
 
 .c6 {
+  max-height: 131px;
+  overflow-y: scroll;
+}
+
+.c7 {
   cursor: pointer;
   margin-bottom: 18px;
   display: -webkit-box;
@@ -109,11 +114,11 @@ exports[`FilterBox snapshot testing 1`] = `
   align-items: center;
 }
 
-.c6:last-of-type {
+.c7:last-of-type {
   margin-bottom: 0;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -131,7 +136,6 @@ exports[`FilterBox snapshot testing 1`] = `
   box-shadow: 0px 1px 7px rgba(93,56,192,0.4);
   border-radius: 2px;
   margin: 0 8px 0 0;
-  background-color: #1EA4CE;
 }
 
 @media (min-width:0px) and (max-width:768px) {
@@ -147,7 +151,7 @@ exports[`FilterBox snapshot testing 1`] = `
 }
 
 @media (min-width:0px) and (max-width:768px) {
-  .c8 {
+  .c9 {
     height: auto;
   }
 }
@@ -183,52 +187,58 @@ exports[`FilterBox snapshot testing 1`] = `
       className="c6"
     >
       <div
-        checked={true}
         className="c7"
-      />
-      <div
-        className="c8"
+        onClick={[Function]}
       >
-        <span
+        <div
+          checked={false}
+          className="c8"
+        />
+        <div
           className="c9"
-          color="black600"
-          size={14}
         >
-          key1
-        </span>
-        <span
-          className="c10"
-          color="thinGray"
-          size={14}
-        >
-          (18)
-        </span>
+          <span
+            className="c10"
+            color="black600"
+            size={14}
+          >
+            key1
+          </span>
+          <span
+            className="c11"
+            color="thinGray"
+            size={14}
+          >
+            (18)
+          </span>
+        </div>
       </div>
-    </div>
-    <div
-      className="c6"
-    >
       <div
-        checked={true}
         className="c7"
-      />
-      <div
-        className="c8"
+        onClick={[Function]}
       >
-        <span
+        <div
+          checked={false}
+          className="c8"
+        />
+        <div
           className="c9"
-          color="black600"
-          size={14}
         >
-          key2
-        </span>
-        <span
-          className="c10"
-          color="thinGray"
-          size={14}
-        >
-          (18)
-        </span>
+          <span
+            className="c10"
+            color="black600"
+            size={14}
+          >
+            key2
+          </span>
+          <span
+            className="c11"
+            color="thinGray"
+            size={14}
+          >
+            (18)
+          </span>
+        </div>
       </div>
     </div>
   </div>

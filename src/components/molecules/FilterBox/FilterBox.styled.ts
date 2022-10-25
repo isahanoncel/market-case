@@ -7,7 +7,12 @@ export const FilterBoxWrapper = styled.div`
   border-radius: 2px;
   margin-top: 12px;
   padding: 24px;
-  max-height: 184px;
+  max-height: 244px;
+  overflow: hidden;
+`;
+
+export const FilterListWrapper = styled.div`
+  max-height: 131px;
   overflow-y: scroll;
 `;
 
