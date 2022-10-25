@@ -30,6 +30,28 @@ exports[`HomeTemplate snapshot testing 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin: 24px 0 0 0;
+}
+
+.c17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c21 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c6 {
@@ -56,6 +78,22 @@ exports[`HomeTemplate snapshot testing 1`] = `
   margin: 0;
 }
 
+.c22 {
+  font-size: 14px;
+  line-height: 14px;
+  color: #525252;
+  font-weight: 600;
+  margin: 0;
+}
+
+.c23 {
+  font-size: 14px;
+  line-height: 14px;
+  color: #A8A8A8;
+  font-weight: 400;
+  margin: 0 0 0 4px;
+}
+
 .c11 {
   background-color: #fff;
   box-shadow: 0px 6px 24px rgba(93,62,188,0.04);
@@ -79,6 +117,10 @@ exports[`HomeTemplate snapshot testing 1`] = `
   align-items: center;
 }
 
+.c12:last-of-type {
+  margin-bottom: 0;
+}
+
 .c13 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -97,6 +139,83 @@ exports[`HomeTemplate snapshot testing 1`] = `
   border: 2px solid #DFDEE2;
   border-radius: 22px;
   margin: 0 12px 0 0;
+}
+
+.c16 {
+  margin-bottom: 17px;
+}
+
+.c18 {
+  font-size: 14px;
+  outline: none;
+  padding: 12px 16px;
+  color: #525252;
+  border: 2px solid #E0E0E0;
+  border-radius: 2px;
+}
+
+.c18::-webkit-input-placeholder {
+  color: #E0E0E0;
+}
+
+.c18::-moz-placeholder {
+  color: #E0E0E0;
+}
+
+.c18:-ms-input-placeholder {
+  color: #E0E0E0;
+}
+
+.c18::placeholder {
+  color: #E0E0E0;
+}
+
+.c15 {
+  background-color: #fff;
+  box-shadow: 0px 6px 24px rgba(93,62,188,0.04);
+  border-radius: 2px;
+  margin-top: 12px;
+  padding: 24px;
+  max-height: 184px;
+  overflow-y: scroll;
+}
+
+.c19 {
+  cursor: pointer;
+  margin-bottom: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c19:last-of-type {
+  margin-bottom: 0;
+}
+
+.c20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  box-shadow: 0px 1px 7px rgba(93,56,192,0.4);
+  border-radius: 2px;
+  margin: 0 8px 0 0;
+  background-color: #1EA4CE;
 }
 
 .c5 {
@@ -163,6 +282,18 @@ exports[`HomeTemplate snapshot testing 1`] = `
 
 @media (min-width:0px) and (max-width:768px) {
   .c9 {
+    height: auto;
+  }
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c17 {
+    height: auto;
+  }
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c21 {
     height: auto;
   }
 }
@@ -329,13 +460,6 @@ exports[`HomeTemplate snapshot testing 1`] = `
             </div>
           </div>
         </div>
-        <div>
-          filters
-        </div>
-      </div>
-      <div
-        className="c8"
-      >
         <div
           className="c9"
         >
@@ -344,84 +468,53 @@ exports[`HomeTemplate snapshot testing 1`] = `
             color="gray"
             size={13}
           >
-            Sorting
+            Brands
           </span>
           <div
-            className="c11"
+            className="c15"
           >
             <div
-              className="c12"
-              onClick={[Function]}
+              className="c16"
             >
               <div
-                checked={false}
-                className="c13"
-              />
-              <span
-                className="c14"
-                color="black600"
-                size={14}
+                className="c17"
               >
-                Price low to high
-              </span>
+                <input
+                  className="c18"
+                  onChange={[Function]}
+                  placeholder="Search Brands"
+                  type="text"
+                />
+              </div>
             </div>
             <div
-              className="c12"
-              onClick={[Function]}
+              className="c19"
             >
               <div
-                checked={false}
-                className="c13"
+                checked={true}
+                className="c20"
               />
-              <span
-                className="c14"
-                color="black600"
-                size={14}
-              >
-                Price high to low
-              </span>
-            </div>
-            <div
-              className="c12"
-              onClick={[Function]}
-            >
               <div
-                checked={false}
-                className="c13"
-              />
-              <span
-                className="c14"
-                color="black600"
-                size={14}
+                className="c21"
               >
-                New to old
-              </span>
-            </div>
-            <div
-              className="c12"
-              onClick={[Function]}
-            >
-              <div
-                checked={false}
-                className="c13"
-              />
-              <span
-                className="c14"
-                color="black600"
-                size={14}
-              >
-                Old to new
-              </span>
+                <span
+                  className="c22"
+                  color="black600"
+                  size={14}
+                >
+                  test
+                </span>
+                <span
+                  className="c23"
+                  color="thinGray"
+                  size={14}
+                >
+                  (18)
+                </span>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          filters
-        </div>
-      </div>
-      <div
-        className="c8"
-      >
         <div
           className="c9"
         >
@@ -430,80 +523,63 @@ exports[`HomeTemplate snapshot testing 1`] = `
             color="gray"
             size={13}
           >
-            Sorting
+            Brands
           </span>
           <div
-            className="c11"
+            className="c15"
           >
             <div
-              className="c12"
-              onClick={[Function]}
+              className="c16"
             >
               <div
-                checked={false}
-                className="c13"
-              />
-              <span
-                className="c14"
-                color="black600"
-                size={14}
+                className="c17"
               >
-                Price low to high
-              </span>
+                <input
+                  className="c18"
+                  onChange={[Function]}
+                  placeholder="Search Brands"
+                  type="text"
+                />
+              </div>
             </div>
             <div
-              className="c12"
-              onClick={[Function]}
+              className="c19"
             >
               <div
-                checked={false}
-                className="c13"
+                checked={true}
+                className="c20"
               />
-              <span
-                className="c14"
-                color="black600"
-                size={14}
-              >
-                Price high to low
-              </span>
-            </div>
-            <div
-              className="c12"
-              onClick={[Function]}
-            >
               <div
-                checked={false}
-                className="c13"
-              />
-              <span
-                className="c14"
-                color="black600"
-                size={14}
+                className="c21"
               >
-                New to old
-              </span>
-            </div>
-            <div
-              className="c12"
-              onClick={[Function]}
-            >
-              <div
-                checked={false}
-                className="c13"
-              />
-              <span
-                className="c14"
-                color="black600"
-                size={14}
-              >
-                Old to new
-              </span>
+                <span
+                  className="c22"
+                  color="black600"
+                  size={14}
+                >
+                  test
+                </span>
+                <span
+                  className="c23"
+                  color="thinGray"
+                  size={14}
+                >
+                  (18)
+                </span>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          filters
-        </div>
+      </div>
+      <div
+        className="c8"
+      >
+        Products
+      </div>
+      <div
+        className="c8"
+      >
+        Basket
       </div>
     </div>
   </div>

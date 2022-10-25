@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     background-color: ${({ theme }) => theme.colors.white};
+    line-height: 18px;
   }
 
 `;

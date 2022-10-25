@@ -13,12 +13,8 @@ const HomeTemplate = () => {
           <S.HomeTemplateContentBox>
             <Filters />
           </S.HomeTemplateContentBox>
-          <S.HomeTemplateContentBox>
-            <Filters />
-          </S.HomeTemplateContentBox>
-          <S.HomeTemplateContentBox>
-            <Filters />
-          </S.HomeTemplateContentBox>
+          <S.HomeTemplateContentBox>Products</S.HomeTemplateContentBox>
+          <S.HomeTemplateContentBox>Basket</S.HomeTemplateContentBox>
         </S.HomeTemplateContentWrapper>
       </Container>
     </S.HomeTemplateWrapper>

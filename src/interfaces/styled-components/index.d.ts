@@ -13,6 +13,7 @@ export type Colors =
   | 'transparent'
   | 'innerBorder'
   | 'black100'
+  | 'thinGray'
   | 'black600';
 
 type Fonts = 'OpenSans';

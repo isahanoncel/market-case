@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import StyledHelper from '../../../constants/styles/Helper';
 
-export const SortingWrapper = styled.div`
+export const FilterBoxWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
   box-shadow: 0px 6px 24px rgba(93, 62, 188, 0.04);
   border-radius: 2px;
@@ -11,7 +11,7 @@ export const SortingWrapper = styled.div`
   overflow-y: scroll;
 `;
 
-export const SortingItem = styled.div`
+export const FilterItem = styled.div`
   cursor: pointer;
   margin-bottom: 18px;
   ${StyledHelper.CenterContentVertical}
@@ -21,12 +21,15 @@ export const SortingItem = styled.div`
   }
 `;
 
-export const SortingRadio = styled.div<{ checked: boolean }>`
+export const FilterCheck = styled.div<{ checked?: boolean }>`
   ${StyledHelper.CenterContent}
   width: 22px;
   height: 22px;
-  border: 2px solid ${({ theme }) => theme.colors.innerBorder};
-  border-radius: 22px;
-  margin: 0 12px 0 0;
-  ${(props) => props.checked && `border-color:${props.theme.colors.primary}`};
+
+  box-shadow: 0px 1px 7px rgba(93, 56, 192, 0.4);
+  border-radius: 2px;
+
+  margin: 0 8px 0 0;
+  ${(props) =>
+    props.checked && `background-color:${props.theme.colors.primary}`};
 `;

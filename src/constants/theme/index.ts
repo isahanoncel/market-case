@@ -10,6 +10,7 @@ export const COLORS = {
   background: '#E5E5E5',
   transparent: 'transparent',
   innerBorder: '#DFDEE2',
+  thinGray: '#A8A8A8',
 };
 
 export const FONTS = {

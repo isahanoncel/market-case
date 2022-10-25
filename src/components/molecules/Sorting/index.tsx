@@ -47,7 +47,7 @@ const Sorting: FC = () => {
   }, [selectedSorting]);
 
   return (
-    <Flex flexDirection="column">
+    <Flex flexDirection="column" margin="24px 0 0 0">
       <Label size={13} weight={600} color="gray">
         Sorting
       </Label>

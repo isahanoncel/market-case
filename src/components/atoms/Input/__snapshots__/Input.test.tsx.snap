@@ -11,27 +11,33 @@ exports[`Input snapshot testing 1`] = `
   flex-direction: column;
 }
 
+.c0 {
+  margin-bottom: 17px;
+}
+
 .c2 {
   font-size: 14px;
-  line-height: 14px;
-  color: #E0E0E0;
-  font-weight: 400;
-  margin: 0;
-}
-
-.c0 {
-  display: block;
-  margin-bottom: 15px;
-}
-
-.c3 {
-  margin-top: 5px;
-  border: none;
   outline: none;
-  border-radius: 3px;
-  padding: 15px 5px;
+  padding: 12px 16px;
+  color: #525252;
+  border: 2px solid #E0E0E0;
+  border-radius: 2px;
+}
+
+.c2::-webkit-input-placeholder {
   color: #E0E0E0;
-  border: 1px solid #E0E0E0;
+}
+
+.c2::-moz-placeholder {
+  color: #E0E0E0;
+}
+
+.c2:-ms-input-placeholder {
+  color: #E0E0E0;
+}
+
+.c2::placeholder {
+  color: #E0E0E0;
 }
 
 @media (min-width:0px) and (max-width:768px) {
@@ -46,16 +52,10 @@ exports[`Input snapshot testing 1`] = `
   <div
     className="c1"
   >
-    <span
-      className="c2"
-      color="black100"
-      size={14}
-    >
-      Search...
-    </span>
     <input
-      className="c3"
+      className="c2"
       onChange={[Function]}
+      placeholder="Search..."
       type="text"
     />
   </div>

@@ -59,7 +59,6 @@
     "@storybook/addon-actions": "^6.5.10",
     "@storybook/addon-essentials": "^6.5.10",
     "@storybook/addon-links": "^6.5.10",
-    "@storybook/addons": "^6.5.10",
     "@storybook/builder-webpack5": "^6.5.10",
     "@storybook/manager-webpack5": "^6.5.10",
     "@storybook/node-logger": "^6.5.10",
@@ -95,7 +94,8 @@
     "prop-types": "^15.8.1",
     "react-test-renderer": "^18.2.0",
     "storybook-addon-designs": "^6.3.1",
-    "webpack": "^5.74.0"
+    "webpack": "^5.74.0",
+    "@storybook/addons": "^6.5.10"
   },
   "homepage": "https://market-task.herokuapp.com"
 }
