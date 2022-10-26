@@ -4,7 +4,10 @@ import Flex from '../../atoms/Flex';
 import Basket from '../../molecules/Basket';
 import * as S from './Header.styled';
 
-const Header: FC = () => {
+interface IHeader {
+  setShowBasketList: (show: boolean) => void;
+}
+const Header: FC<IHeader> = ({ setShowBasketList }) => {
   return (
     <S.HeaderWrapper>
       <Container>
@@ -12,7 +15,7 @@ const Header: FC = () => {
           <S.HeaderLink href="/">
             <img src="/assets/logo.svg" alt="Getir" width={141} height={40} />
           </S.HeaderLink>
-          <Basket />
+          <Basket setShowBasketList={setShowBasketList} />
         </Flex>
       </Container>
     </S.HeaderWrapper>

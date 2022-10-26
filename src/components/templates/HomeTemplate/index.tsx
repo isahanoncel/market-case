@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useState } from 'react';
 import { ICompany } from '../../../interfaces/company';
 import CompanyService from '../../../service/company';
 import ProductService from '../../../service/product';
 import { useAppDispatch } from '../../../store';
 import { setProducts } from '../../../store/slices/products';
 import Container from '../../atoms/Container';
+import BasketList from '../../molecules/BasketList';
 import Filters from '../../organisms/Filters';
 import Header from '../../organisms/Header';
 import ProductListing from '../../organisms/ProductListing';
@@ -13,7 +14,13 @@ import * as S from './HomeTemplate.styled';
 const HomeTemplate = () => {
   const [companies, setCompanies] = useState<ICompany[]>([]);
   const [tags, setTags] = useState<string[]>([]);
+  const [showBasketList, setShowBasketList] = useState<boolean>(false);
+
   const dispatch = useAppDispatch();
+
+  useLayoutEffect(() => {
+    setShowBasketList(window.innerWidth > 765);
+  }, []);
 
   useEffect(() => {
     CompanyService.getCompanies().then((data) => {
@@ -31,7 +38,7 @@ const HomeTemplate = () => {
 
   return (
     <S.HomeTemplateWrapper>
-      <Header />
+      <Header setShowBasketList={setShowBasketList} />
       <Container>
         <S.HomeTemplateContentWrapper>
           <S.HomeTemplateContentBox>
@@ -40,7 +47,9 @@ const HomeTemplate = () => {
           <S.HomeTemplateContentBox>
             <ProductListing />
           </S.HomeTemplateContentBox>
-          <S.HomeTemplateContentBox>Basket</S.HomeTemplateContentBox>
+          <S.HomeTemplateContentBox>
+            {showBasketList && <BasketList />}
+          </S.HomeTemplateContentBox>
         </S.HomeTemplateContentWrapper>
       </Container>
     </S.HomeTemplateWrapper>

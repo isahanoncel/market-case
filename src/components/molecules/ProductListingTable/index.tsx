@@ -1,5 +1,8 @@
-import React, { FC, useMemo } from 'react';
+import React, { FC, useCallback, useMemo } from 'react';
 import { IProduct } from '../../../interfaces/product';
+import { useAppDispatch } from '../../../store';
+import { addToBasket } from '../../../store/slices/basket';
+import { formatMoney } from '../../../utils/formatting';
 import Button from '../../atoms/Button';
 import Label from '../../atoms/Label';
 import * as S from './ProductListingTable.styled';
@@ -9,6 +12,12 @@ interface IProductListingTable {
 }
 
 const ProductListingTable: FC<IProductListingTable> = ({ items }) => {
+  const dispatch = useAppDispatch();
+
+  const basketHandler = useCallback((item: IProduct) => {
+    dispatch(addToBasket(item));
+  }, []);
+
   const renderItems = useMemo(() => {
     return items.map((item) => {
       return (
@@ -19,11 +28,15 @@ const ProductListingTable: FC<IProductListingTable> = ({ items }) => {
               alt="market"
             />
           </S.ItemImageWrapper>
-          <S.ItemPrice>₺ {item.price}</S.ItemPrice>
+          <S.ItemPrice>{formatMoney(item.price)}</S.ItemPrice>
           <Label size={14} weight={600}>
             {item.name}
           </Label>
-          <Button fullWidth margin="8px 0 0 0">
+          <Button
+            onClick={() => basketHandler(item)}
+            fullWidth
+            margin="8px 0 0 0"
+          >
             Add
           </Button>
         </S.ProductListingTableItem>

@@ -11,10 +11,12 @@ export type Colors =
   | 'whiteBlue'
   | 'white'
   | 'background'
+  | 'grayScale'
   | 'transparent'
   | 'innerBorder'
   | 'black100'
   | 'thinGray'
+  | 'black50'
   | 'black500'
   | 'black600';
 

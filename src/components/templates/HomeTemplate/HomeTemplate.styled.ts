@@ -24,6 +24,7 @@ export const HomeTemplateContentWrapper = styled.div`
 `;
 export const HomeTemplateContentBox = styled.div`
   width: auto;
+  min-width: 296px;
 `;
 
 export const HeaderLink = styled.a`
