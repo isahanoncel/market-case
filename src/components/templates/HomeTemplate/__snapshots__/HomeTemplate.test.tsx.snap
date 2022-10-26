@@ -38,6 +38,22 @@ exports[`HomeTemplate snapshot testing 1`] = `
   margin: 8px 0 0 0;
 }
 
+.c30 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 0 87px 0;
+}
+
 .c11 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -91,6 +107,14 @@ exports[`HomeTemplate snapshot testing 1`] = `
   line-height: 14px;
   color: #1EA4CE;
   font-weight: 600;
+  margin: 0;
+}
+
+.c31 {
+  font-size: 13px;
+  line-height: 14px;
+  color: #1EA4CE;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -201,6 +225,7 @@ exports[`HomeTemplate snapshot testing 1`] = `
 .c22 {
   max-height: 131px;
   overflow-y: scroll;
+  padding: 2px 4px;
 }
 
 .c10 {
@@ -320,6 +345,12 @@ exports[`HomeTemplate snapshot testing 1`] = `
 
 @media (min-width:0px) and (max-width:768px) {
   .c28 {
+    height: auto;
+  }
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c30 {
     height: auto;
   }
 }
@@ -652,6 +683,17 @@ exports[`HomeTemplate snapshot testing 1`] = `
       <div
         className="c8"
       />
+    </div>
+    <div
+      className="c30"
+    >
+      <span
+        className="c31"
+        color="primary"
+        size={13}
+      >
+        ©2019 Market • Privacy Policy
+      </span>
     </div>
   </div>
 </div>

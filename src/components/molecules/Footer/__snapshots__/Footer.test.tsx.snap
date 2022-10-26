@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer snapshot testing 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 0 87px 0;
+}
+
+.c1 {
+  font-size: 13px;
+  line-height: 14px;
+  color: #1EA4CE;
+  font-weight: 300;
+  margin: 0;
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c0 {
+    height: auto;
+  }
+}
+
+<div
+  className="c0"
+>
+  <span
+    className="c1"
+    color="primary"
+    size={13}
+  >
+    ©2019 Market • Privacy Policy
+  </span>
+</div>
+`;

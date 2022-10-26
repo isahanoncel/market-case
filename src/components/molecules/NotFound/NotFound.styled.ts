@@ -11,6 +11,7 @@ export const NotFoundWrapper = styled.div`
   flex-direction: column;
 
   span {
+    height: 50px;
     ${device.mobile} {
       font-size: 24px;
       display: block;
@@ -21,12 +22,14 @@ export const NotFoundWrapper = styled.div`
 `;
 
 export const Heading = styled.h1`
+  height: 75px;
   margin-top: 0;
   font-size: 150px;
   color: ${({ theme }) => theme.colors.primary};
   margin-bottom: 15px;
 
   ${device.mobile} {
+    height: 50px;
     font-size: 75px;
   }
 `;

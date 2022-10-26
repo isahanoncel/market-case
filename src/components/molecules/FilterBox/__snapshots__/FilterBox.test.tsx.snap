@@ -100,6 +100,7 @@ exports[`FilterBox snapshot testing 1`] = `
 .c6 {
   max-height: 131px;
   overflow-y: scroll;
+  padding: 2px 4px;
 }
 
 .c7 {

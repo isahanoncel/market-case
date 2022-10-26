@@ -19,6 +19,7 @@ export const FilterBoxWrapper = styled.div`
 export const FilterListWrapper = styled.div`
   max-height: 131px;
   overflow-y: scroll;
+  padding: 2px 4px;
 `;
 
 export const FilterItem = styled.div`

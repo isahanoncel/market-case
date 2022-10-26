@@ -33,7 +33,7 @@ const Filters: FC<IFilters> = ({ companies, tags }) => {
   }, [tags]);
 
   useLayoutEffect(() => {
-    setShowFilters(window.innerWidth >= 765);
+    setShowFilters(window.innerWidth >= 1024);
   }, []);
 
   return (

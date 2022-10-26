@@ -8,7 +8,7 @@ const NotFound: FC = () => {
     <S.NotFoundWrapper>
       <S.Heading>OOPS!</S.Heading>
 
-      <Label size={25} color="primary" weight={500}>
+      <Label size={25} color="primary" weight={500} lineHeight={25}>
         We can't find the page you're looking for.
       </Label>
 

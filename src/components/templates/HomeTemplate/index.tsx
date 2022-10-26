@@ -6,6 +6,7 @@ import { useAppDispatch } from '../../../store';
 import { setProducts } from '../../../store/slices/products';
 import Container from '../../atoms/Container';
 import BasketList from '../../molecules/BasketList';
+import Footer from '../../molecules/Footer';
 import Filters from '../../organisms/Filters';
 import Header from '../../organisms/Header';
 import ProductListing from '../../organisms/ProductListing';
@@ -51,6 +52,7 @@ const HomeTemplate = () => {
             {showBasketList && <BasketList />}
           </S.HomeTemplateContentBox>
         </S.HomeTemplateContentWrapper>
+        <Footer />
       </Container>
     </S.HomeTemplateWrapper>
   );

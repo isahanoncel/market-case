@@ -1,4 +1,4 @@
-import React, { FC, memo } from 'react';
+import React, { FC, memo, useCallback } from 'react';
 import { useAppSelector } from '../../../store';
 import { formatMoney } from '../../../utils/formatting';
 import Icon from '../../atoms/Icon';
@@ -11,10 +11,13 @@ interface IBasket {
 const Basket: FC<IBasket> = ({ setShowBasketList }) => {
   const basket = useAppSelector((a) => a.basket);
 
+  const handleShowBasketList = useCallback(() => {
+    if (window.innerWidth < 1024) {
+      setShowBasketList((prev: boolean) => !prev);
+    }
+  }, []);
   return (
-    <S.BasketWrapper
-      onClick={() => setShowBasketList((prev: boolean) => !prev)}
-    >
+    <S.BasketWrapper onClick={handleShowBasketList}>
       <Icon name="Bag" />
       <Label color="white" size={14} weight={600}>
         {formatMoney(basket.totalPrice)}
