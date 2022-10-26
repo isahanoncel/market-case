@@ -1,4 +1,4 @@
-## Getir task
+## Market task
 I'm using atomic design methodology in this task, <br>
 You can see components at the atoms, molecules, organisms folders. <br>
 I'm testing our components with react-test-renderer for their snapshots. <br>
