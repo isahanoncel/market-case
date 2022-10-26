@@ -16,7 +16,7 @@ const HomeTemplate = () => {
   const [companies, setCompanies] = useState<ICompany[]>([]);
   const [tags, setTags] = useState<string[]>([]);
   const [showBasketList, setShowBasketList] = useState<boolean>(false);
-
+  const [productRequestLoading, setProductRequestLoading] = useState(true);
   const dispatch = useAppDispatch();
 
   useLayoutEffect(() => {
@@ -32,9 +32,13 @@ const HomeTemplate = () => {
       setTags(data);
     });
 
-    ProductService.getProducts().then((data) => {
-      dispatch(setProducts(data));
-    });
+    ProductService.getProducts()
+      .then((data) => {
+        dispatch(setProducts(data));
+      })
+      .finally(() => {
+        setProductRequestLoading(false);
+      });
   }, []);
 
   return (
@@ -46,7 +50,7 @@ const HomeTemplate = () => {
             <Filters tags={tags} companies={companies} />
           </S.HomeTemplateContentBox>
           <S.HomeTemplateContentBox>
-            <ProductListing />
+            <ProductListing isLoading={productRequestLoading} />
           </S.HomeTemplateContentBox>
           <S.HomeTemplateContentBox>
             {showBasketList && <BasketList />}

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner snapshot testing 1`] = `
+.c0 {
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+}
+
+.c1 {
+  stroke-linecap: round;
+  -webkit-animation: dash 1.5s ease-in-out infinite;
+  animation: dash 1.5s ease-in-out infinite;
+}
+
+<svg
+  className="c0"
+  viewBox="0 0 50 50"
+  width={40}
+>
+  <circle
+    className="c1"
+    cx="25"
+    cy={25}
+    fill="none"
+    r={20}
+    stroke="Gray"
+    strokeWidth={5}
+  />
+</svg>
+`;

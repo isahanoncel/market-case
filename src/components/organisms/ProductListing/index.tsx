@@ -9,16 +9,30 @@ import Label from '../../atoms/Label';
 import ProductListingTable from '../../molecules/ProductListingTable';
 import * as S from './ProductListing.styled';
 import Pagination from '../../molecules/Pagination';
+import Spinner from '../../atoms/Spinner';
 
-const ProductListing: FC = () => {
+interface IProductListing {
+  isLoading?: boolean;
+}
+const ProductListing: FC<IProductListing> = ({ isLoading }) => {
   const [activeType, setActiveType] = useState<string>('mug');
   const products = useAppSelector((a) => a.products);
   const [filteredProducts, setFilteredProducts] = useState<IProduct[]>([]);
   const filters = useAppSelector((a) => a.filter);
   const [page, setPage] = useState<number>(1);
+  const [loading, setLoading] = useState(isLoading);
+
   const ITEMS_PER_PAGE = 16;
 
+  const handleChangeActiveType = useCallback(
+    (type: string) => {
+      setActiveType(type);
+    },
+    [activeType],
+  );
+
   useEffect(() => {
+    setLoading(true);
     let productData = cloneDeep(products?.items) ?? [];
     if (activeType) {
       productData = productData.filter(
@@ -51,18 +65,44 @@ const ProductListing: FC = () => {
     }
 
     setFilteredProducts([...productData]);
+    setLoading(false);
   }, [products.items, activeType, filters, page]);
 
   useEffect(() => {
     setPage(1);
   }, [filters, activeType]);
+  useEffect(() => {
+    setLoading(isLoading);
+  }, [isLoading]);
 
-  const handleChangeActiveType = useCallback(
-    (type: string) => {
-      setActiveType(type);
-    },
-    [activeType],
-  );
+  const renderTable = useCallback(() => {
+    if (loading) {
+      return <Spinner />;
+    }
+
+    return filteredProducts.length > 0 ? (
+      <>
+        <ProductListingTable
+          items={filteredProducts.slice(
+            (page - 1) * ITEMS_PER_PAGE,
+            (page - 1) * ITEMS_PER_PAGE + ITEMS_PER_PAGE,
+          )}
+        />
+        <Pagination
+          page={page}
+          itemLength={filteredProducts.length}
+          itemsPerPage={ITEMS_PER_PAGE}
+          setPage={setPage}
+        />
+      </>
+    ) : (
+      <Flex margin="8px 0 0 0">
+        <Label color="primary" size={20} weight={600}>
+          No products were found matching your search....
+        </Label>
+      </Flex>
+    );
+  }, [filteredProducts, loading]);
 
   return (
     <S.ProductListingWrapper>
@@ -85,28 +125,7 @@ const ProductListing: FC = () => {
           shirt
         </Button>
       </Flex>
-      {filteredProducts.length > 0 ? (
-        <>
-          <ProductListingTable
-            items={filteredProducts.slice(
-              (page - 1) * ITEMS_PER_PAGE,
-              (page - 1) * ITEMS_PER_PAGE + ITEMS_PER_PAGE,
-            )}
-          />
-          <Pagination
-            page={page}
-            itemLength={filteredProducts.length}
-            itemsPerPage={ITEMS_PER_PAGE}
-            setPage={setPage}
-          />
-        </>
-      ) : (
-        <Flex margin="8px 0 0 0">
-          <Label color="primary" size={20} weight={600}>
-            No products were found matching your search....
-          </Label>
-        </Flex>
-      )}
+      {renderTable()}
     </S.ProductListingWrapper>
   );
 };
