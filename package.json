@@ -98,5 +98,5 @@
     "storybook-addon-designs": "^6.3.1",
     "webpack": "^5.74.0"
   },
-  "homepage": "https://market-task.herokuapp.com"
+  "homepage": "."
 }
