@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination snapshot testing 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 32px;
+  padding-bottom: 100px;
+}
+
+.c1 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #1EA4CE;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 6px;
+  opacity: 0;
+}
+
+.c1:first-of-type {
+  margin-right: 56px;
+}
+
+.c1:last-of-type {
+  margin-left: 56px;
+}
+
+.c1:last-of-type svg {
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.c4 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #1EA4CE;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 6px;
+}
+
+.c4:first-of-type {
+  margin-right: 56px;
+}
+
+.c4:last-of-type {
+  margin-left: 56px;
+}
+
+.c4:last-of-type svg {
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.c2 {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  width: 32px;
+  height: 40px;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  background-color: #1EA4CE;
+}
+
+.c3 {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  width: 32px;
+  height: 40px;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    disabled={true}
+    onClick={[Function]}
+  >
+    <svg
+      fill="#1EA4CE"
+      height={16}
+      viewBox="0 0 16 16"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clipRule="evenodd"
+        d="M0.0667786 7.33281C0.110539 7.43791 0.171804 7.53425 0.259324 7.61308L6.38574 13.7438C6.72707 14.0854 7.27844 14.0854 7.61977 13.7438C7.9611 13.4023 7.9611 12.8505 7.61977 12.5089L2.98995 7.87582L13.1248 7.87582C13.6062 7.87582 14 7.4817 14 7C14 6.5183 13.6062 6.12418 13.1248 6.12418L2.9812 6.12418L7.61102 1.49109C7.95235 1.14951 7.95235 0.597748 7.61102 0.256178C7.26969 -0.0853924 6.71832 -0.0853923 6.37699 0.256178L0.250571 6.38693C0.171802 6.46575 0.110537 6.56209 0.0580247 6.66719C-0.020744 6.87739 -0.0207421 7.12262 0.0667786 7.33281Z"
+        fill="#1EA4CE"
+        fillRule="evenodd"
+      />
+    </svg>
+     Prev
+  </div>
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    1
+  </div>
+  <div
+    className="c3"
+    onClick={[Function]}
+  >
+    2
+  </div>
+  <div
+    className="c3"
+    onClick={[Function]}
+  >
+    3
+  </div>
+  <div
+    className="c3"
+  >
+    ...
+  </div>
+  <div
+    className="c3"
+    onClick={[Function]}
+  >
+    4
+  </div>
+  <div
+    className="c3"
+    onClick={[Function]}
+  >
+    5
+  </div>
+  <div
+    className="c3"
+    onClick={[Function]}
+  >
+    6
+  </div>
+  <div
+    className="c3"
+    onClick={[Function]}
+  >
+    7
+  </div>
+  <div
+    className="c4"
+    onClick={[Function]}
+  >
+    Next 
+    <svg
+      fill="#1EA4CE"
+      height={16}
+      viewBox="0 0 16 16"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clipRule="evenodd"
+        d="M0.0667786 7.33281C0.110539 7.43791 0.171804 7.53425 0.259324 7.61308L6.38574 13.7438C6.72707 14.0854 7.27844 14.0854 7.61977 13.7438C7.9611 13.4023 7.9611 12.8505 7.61977 12.5089L2.98995 7.87582L13.1248 7.87582C13.6062 7.87582 14 7.4817 14 7C14 6.5183 13.6062 6.12418 13.1248 6.12418L2.9812 6.12418L7.61102 1.49109C7.95235 1.14951 7.95235 0.597748 7.61102 0.256178C7.26969 -0.0853924 6.71832 -0.0853923 6.37699 0.256178L0.250571 6.38693C0.171802 6.46575 0.110537 6.56209 0.0580247 6.66719C-0.020744 6.87739 -0.0207421 7.12262 0.0667786 7.33281Z"
+        fill="#1EA4CE"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>
+</div>
+`;

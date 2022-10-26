@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../../constants/styles/GlobalStyle';
 import StyledHelper from '../../../constants/styles/Helper';
 
 export const FilterBoxWrapper = styled.div`
@@ -8,7 +9,11 @@ export const FilterBoxWrapper = styled.div`
   margin-top: 12px;
   padding: 24px;
   max-height: 244px;
+  max-width: 296px;
   overflow: hidden;
+  ${device.mobile} {
+    max-width: 100%;
+  }
 `;
 
 export const FilterListWrapper = styled.div`

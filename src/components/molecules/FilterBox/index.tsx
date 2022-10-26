@@ -72,7 +72,7 @@ const FilterBox: FC<IFilterBox> = ({ title, items, type }) => {
             </Label>
 
             <Label color="thinGray" size={14} margin="0 0 0 4px">
-              (18)
+              {/* (18) */}
             </Label>
           </Flex>
         </S.FilterItem>

@@ -7,6 +7,7 @@ import { setProducts } from '../../../store/slices/products';
 import Container from '../../atoms/Container';
 import Filters from '../../organisms/Filters';
 import Header from '../../organisms/Header';
+import ProductListing from '../../organisms/ProductListing';
 import * as S from './HomeTemplate.styled';
 
 const HomeTemplate = () => {
@@ -36,7 +37,9 @@ const HomeTemplate = () => {
           <S.HomeTemplateContentBox>
             <Filters tags={tags} companies={companies} />
           </S.HomeTemplateContentBox>
-          <S.HomeTemplateContentBox>Products</S.HomeTemplateContentBox>
+          <S.HomeTemplateContentBox>
+            <ProductListing />
+          </S.HomeTemplateContentBox>
           <S.HomeTemplateContentBox>Basket</S.HomeTemplateContentBox>
         </S.HomeTemplateContentWrapper>
       </Container>

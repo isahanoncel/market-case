@@ -93,6 +93,7 @@ exports[`FilterBox snapshot testing 1`] = `
   margin-top: 12px;
   padding: 24px;
   max-height: 244px;
+  max-width: 296px;
   overflow: hidden;
 }
 
@@ -156,6 +157,12 @@ exports[`FilterBox snapshot testing 1`] = `
   }
 }
 
+@media (min-width:0px) and (max-width:768px) {
+  .c2 {
+    max-width: 100%;
+  }
+}
+
 <div
   className="c0"
 >
@@ -208,9 +215,7 @@ exports[`FilterBox snapshot testing 1`] = `
             className="c11"
             color="thinGray"
             size={14}
-          >
-            (18)
-          </span>
+          />
         </div>
       </div>
       <div
@@ -235,9 +240,7 @@ exports[`FilterBox snapshot testing 1`] = `
             className="c11"
             color="thinGray"
             size={14}
-          >
-            (18)
-          </span>
+          />
         </div>
       </div>
     </div>

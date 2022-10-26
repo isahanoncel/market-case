@@ -23,7 +23,7 @@ export const HomeTemplateContentWrapper = styled.div`
   }
 `;
 export const HomeTemplateContentBox = styled.div`
-  flex: 1;
+  width: auto;
 `;
 
 export const HeaderLink = styled.a`

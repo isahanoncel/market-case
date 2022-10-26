@@ -8,12 +8,14 @@ export type Colors =
   | 'primary'
   | 'gray'
   | 'secondary'
+  | 'whiteBlue'
   | 'white'
   | 'background'
   | 'transparent'
   | 'innerBorder'
   | 'black100'
   | 'thinGray'
+  | 'black500'
   | 'black600';
 
 type Fonts = 'OpenSans';

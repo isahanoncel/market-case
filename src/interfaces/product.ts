@@ -4,7 +4,7 @@ export interface IProduct {
   name: string;
   description?: string;
   slug: string;
-  added?: number;
+  added: number;
   manufacturer: string;
   itemType: string;
 }

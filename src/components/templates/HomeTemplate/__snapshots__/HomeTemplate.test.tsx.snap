@@ -22,7 +22,34 @@ exports[`HomeTemplate snapshot testing 1`] = `
   align-items: center;
 }
 
-.c9 {
+.c25 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px 0 0 0;
+}
+
+.c28 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8px 0 0 0;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 0 24px 0;
+}
+
+.c17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -33,7 +60,7 @@ exports[`HomeTemplate snapshot testing 1`] = `
   margin: 24px 0 0 0;
 }
 
-.c17 {
+.c20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -51,7 +78,23 @@ exports[`HomeTemplate snapshot testing 1`] = `
   margin: 0;
 }
 
-.c10 {
+.c24 {
+  font-size: 20px;
+  line-height: 14px;
+  color: #6F6F6F;
+  font-weight: 400;
+  margin: 0;
+}
+
+.c29 {
+  font-size: 20px;
+  line-height: 14px;
+  color: #1EA4CE;
+  font-weight: 600;
+  margin: 0;
+}
+
+.c12 {
   font-size: 13px;
   line-height: 14px;
   color: #697488;
@@ -59,7 +102,7 @@ exports[`HomeTemplate snapshot testing 1`] = `
   margin: 0;
 }
 
-.c14 {
+.c16 {
   font-size: 14px;
   line-height: 18px;
   color: #525252;
@@ -67,17 +110,18 @@ exports[`HomeTemplate snapshot testing 1`] = `
   margin: 0;
 }
 
-.c11 {
+.c13 {
   background-color: #fff;
   box-shadow: 0px 6px 24px rgba(93,62,188,0.04);
   border-radius: 2px;
   margin-top: 12px;
   padding: 24px;
   max-height: 184px;
+  max-width: 296px;
   overflow-y: scroll;
 }
 
-.c12 {
+.c14 {
   cursor: pointer;
   margin-bottom: 18px;
   display: -webkit-box;
@@ -90,11 +134,11 @@ exports[`HomeTemplate snapshot testing 1`] = `
   align-items: center;
 }
 
-.c12:last-of-type {
+.c14:last-of-type {
   margin-bottom: 0;
 }
 
-.c13 {
+.c15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -114,11 +158,11 @@ exports[`HomeTemplate snapshot testing 1`] = `
   margin: 0 12px 0 0;
 }
 
-.c16 {
+.c19 {
   margin-bottom: 17px;
 }
 
-.c18 {
+.c21 {
   font-size: 14px;
   outline: none;
   padding: 12px 16px;
@@ -127,35 +171,79 @@ exports[`HomeTemplate snapshot testing 1`] = `
   border-radius: 2px;
 }
 
-.c18::-webkit-input-placeholder {
+.c21::-webkit-input-placeholder {
   color: #E0E0E0;
 }
 
-.c18::-moz-placeholder {
+.c21::-moz-placeholder {
   color: #E0E0E0;
 }
 
-.c18:-ms-input-placeholder {
+.c21:-ms-input-placeholder {
   color: #E0E0E0;
 }
 
-.c18::placeholder {
+.c21::placeholder {
   color: #E0E0E0;
 }
 
-.c15 {
+.c18 {
   background-color: #fff;
   box-shadow: 0px 6px 24px rgba(93,62,188,0.04);
   border-radius: 2px;
   margin-top: 12px;
   padding: 24px;
   max-height: 244px;
+  max-width: 296px;
   overflow: hidden;
 }
 
-.c19 {
+.c22 {
   max-height: 131px;
   overflow-y: scroll;
+}
+
+.c10 {
+  margin: 0 0 8px 0;
+  width: 100%;
+  background-color: #1EA4CE;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  min-width: 85px;
+  min-height: 32px;
+}
+
+.c26 {
+  margin: 0 8px 0 0;
+  background-color: #1EA4CE;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  min-width: 85px;
+  min-height: 32px;
+}
+
+.c27 {
+  background-color: #F2F0FD;
+  color: #1EA4CE;
+  border: none;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  min-width: 85px;
+  min-height: 32px;
+}
+
+.c9 button {
+  display: none;
 }
 
 .c5 {
@@ -189,6 +277,11 @@ exports[`HomeTemplate snapshot testing 1`] = `
   margin: auto;
 }
 
+.c23 {
+  width: 100%;
+  min-width: 608px;
+}
+
 .c0 {
   width: 100%;
   height: 100%;
@@ -209,9 +302,7 @@ exports[`HomeTemplate snapshot testing 1`] = `
 }
 
 .c8 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  width: auto;
 }
 
 @media (min-width:0px) and (max-width:768px) {
@@ -221,7 +312,19 @@ exports[`HomeTemplate snapshot testing 1`] = `
 }
 
 @media (min-width:0px) and (max-width:768px) {
-  .c9 {
+  .c25 {
+    height: auto;
+  }
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c28 {
+    height: auto;
+  }
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c11 {
     height: auto;
   }
 }
@@ -233,9 +336,40 @@ exports[`HomeTemplate snapshot testing 1`] = `
 }
 
 @media (min-width:0px) and (max-width:768px) {
+  .c20 {
+    height: auto;
+  }
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c13 {
+    max-width: 100%;
+  }
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c18 {
+    max-width: 100%;
+  }
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c9 button {
+    display: block;
+  }
+}
+
+@media (min-width:0px) and (max-width:768px) {
   .c1 {
     position: fixed;
     top: 0;
+  }
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c23 {
+    padding-top: 20px;
+    min-width: 100%;
   }
 }
 
@@ -318,151 +452,201 @@ exports[`HomeTemplate snapshot testing 1`] = `
         <div
           className="c9"
         >
-          <span
+          <button
             className="c10"
-            color="gray"
-            size={13}
+            color="#fff"
+            onClick={[Function]}
           >
-            Sorting
-          </span>
+            Filters
+          </button>
           <div
             className="c11"
           >
-            <div
+            <span
               className="c12"
-              onClick={[Function]}
+              color="gray"
+              size={13}
             >
-              <div
-                checked={false}
-                className="c13"
-              />
-              <span
-                className="c14"
-                color="black600"
-                size={14}
-              >
-                Price low to high
-              </span>
-            </div>
+              Sorting
+            </span>
             <div
-              className="c12"
-              onClick={[Function]}
+              className="c13"
             >
               <div
-                checked={false}
-                className="c13"
-              />
-              <span
                 className="c14"
-                color="black600"
-                size={14}
+                onClick={[Function]}
               >
-                Price high to low
-              </span>
-            </div>
-            <div
-              className="c12"
-              onClick={[Function]}
-            >
-              <div
-                checked={false}
-                className="c13"
-              />
-              <span
-                className="c14"
-                color="black600"
-                size={14}
-              >
-                New to old
-              </span>
-            </div>
-            <div
-              className="c12"
-              onClick={[Function]}
-            >
-              <div
-                checked={false}
-                className="c13"
-              />
-              <span
-                className="c14"
-                color="black600"
-                size={14}
-              >
-                Old to new
-              </span>
-            </div>
-          </div>
-        </div>
-        <div
-          className="c9"
-        >
-          <span
-            className="c10"
-            color="gray"
-            size={13}
-          >
-            Brands
-          </span>
-          <div
-            className="c15"
-          >
-            <div
-              className="c16"
-            >
-              <div
-                className="c17"
-              >
-                <input
-                  className="c18"
-                  onChange={[Function]}
-                  placeholder="Search Brands"
-                  type="text"
+                <div
+                  checked={false}
+                  className="c15"
                 />
+                <span
+                  className="c16"
+                  color="black600"
+                  size={14}
+                >
+                  Price low to high
+                </span>
+              </div>
+              <div
+                className="c14"
+                onClick={[Function]}
+              >
+                <div
+                  checked={false}
+                  className="c15"
+                />
+                <span
+                  className="c16"
+                  color="black600"
+                  size={14}
+                >
+                  Price high to low
+                </span>
+              </div>
+              <div
+                className="c14"
+                onClick={[Function]}
+              >
+                <div
+                  checked={false}
+                  className="c15"
+                />
+                <span
+                  className="c16"
+                  color="black600"
+                  size={14}
+                >
+                  New to old
+                </span>
+              </div>
+              <div
+                className="c14"
+                onClick={[Function]}
+              >
+                <div
+                  checked={false}
+                  className="c15"
+                />
+                <span
+                  className="c16"
+                  color="black600"
+                  size={14}
+                >
+                  Old to new
+                </span>
               </div>
             </div>
-            <div
-              className="c19"
-            />
           </div>
-        </div>
-        <div
-          className="c9"
-        >
-          <span
-            className="c10"
-            color="gray"
-            size={13}
-          >
-            Tags
-          </span>
           <div
-            className="c15"
+            className="c17"
           >
+            <span
+              className="c12"
+              color="gray"
+              size={13}
+            >
+              Brands
+            </span>
             <div
-              className="c16"
+              className="c18"
             >
               <div
-                className="c17"
+                className="c19"
               >
-                <input
-                  className="c18"
-                  onChange={[Function]}
-                  placeholder="Search Tags"
-                  type="text"
-                />
+                <div
+                  className="c20"
+                >
+                  <input
+                    className="c21"
+                    onChange={[Function]}
+                    placeholder="Search Brands"
+                    type="text"
+                  />
+                </div>
               </div>
+              <div
+                className="c22"
+              />
             </div>
+          </div>
+          <div
+            className="c17"
+          >
+            <span
+              className="c12"
+              color="gray"
+              size={13}
+            >
+              Tags
+            </span>
             <div
-              className="c19"
-            />
+              className="c18"
+            >
+              <div
+                className="c19"
+              >
+                <div
+                  className="c20"
+                >
+                  <input
+                    className="c21"
+                    onChange={[Function]}
+                    placeholder="Search Tags"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div
+                className="c22"
+              />
+            </div>
           </div>
         </div>
       </div>
       <div
         className="c8"
       >
-        Products
+        <div
+          className="c23"
+        >
+          <span
+            className="c24"
+            color="black500"
+            size={20}
+          >
+            Products
+          </span>
+          <div
+            className="c25"
+          >
+            <button
+              className="c26"
+              color="#fff"
+              onClick={[Function]}
+            >
+              mug
+            </button>
+            <button
+              className="c27"
+              color="#1EA4CE"
+              onClick={[Function]}
+            >
+              shirt
+            </button>
+          </div>
+          <div
+            className="c28"
+          >
+            <span
+              className="c29"
+              color="primary"
+              size={20}
+            >
+              No products were found matching your search....
+            </span>
+          </div>
+        </div>
       </div>
       <div
         className="c8"

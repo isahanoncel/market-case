@@ -2,11 +2,11 @@ import { createSlice } from '@reduxjs/toolkit';
 import { IProduct } from '../../interfaces/product';
 
 interface IProductsSlide {
-  products?: IProduct[];
+  items?: IProduct[];
 }
 
 const initialState: IProductsSlide = {
-  products: [],
+  items: [],
 };
 
 const productSlice = createSlice({
@@ -14,13 +14,13 @@ const productSlice = createSlice({
   initialState,
   reducers: {
     setProducts(state, action) {
-      state.products = action.payload;
+      state.items = action.payload;
     },
     addProducts(state, action) {
-      state.products?.push(action.payload);
+      state.items?.push(action.payload);
     },
     deleteProduct(state, action) {
-      state.products = state.products?.filter(
+      state.items = state.items?.filter(
         (product) => product.slug !== action.payload,
       );
     },

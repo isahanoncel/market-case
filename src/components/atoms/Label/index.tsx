@@ -9,6 +9,7 @@ interface ITitle {
   color?: Colors;
   children?: React.ReactNode | string;
   margin?: string;
+  onClick?: () => void;
 }
 
 const Label: FC<ITitle> = ({
@@ -18,8 +19,10 @@ const Label: FC<ITitle> = ({
   color = 'black600',
   margin = '0',
   children,
+  onClick,
 }) => (
   <S.StyledLabel
+    onClick={onClick}
     color={color}
     weight={weight}
     size={size}

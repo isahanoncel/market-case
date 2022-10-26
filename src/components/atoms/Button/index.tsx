@@ -1,25 +1,44 @@
-import React, { FC } from 'react';
+import React, { FC, useCallback } from 'react';
 import { COLORS } from '../../../constants/theme';
-import { Colors } from '../../../interfaces/styled-components';
 import * as S from './Button.styled';
 
 interface IButton {
   onClick?: () => void;
   children: string;
-  backgroundColor?: Colors;
   disabled?: boolean;
+  margin?: string;
+  secondary?: boolean;
+  fullWidth?: boolean;
 }
 const Button: FC<IButton> = ({
   children,
   onClick,
-  backgroundColor,
   disabled,
+  margin,
+  secondary,
+  fullWidth,
 }) => {
+  const buttonTheme = useCallback(() => {
+    if (secondary) {
+      return {
+        color: COLORS.primary,
+        backgroundColor: COLORS.whiteBlue,
+      };
+    }
+    return {
+      color: COLORS.white,
+      backgroundColor: COLORS.primary,
+    };
+  }, [secondary]);
+
   return (
     <S.StyledButton
       disabled={disabled}
-      backgroundColor={COLORS[backgroundColor ?? 'primary']}
+      fullWidth={fullWidth}
+      backgroundColor={buttonTheme().backgroundColor}
+      color={buttonTheme().color}
       onClick={onClick}
+      margin={margin}
     >
       {children}
     </S.StyledButton>

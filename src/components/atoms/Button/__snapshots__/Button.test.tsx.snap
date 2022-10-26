@@ -3,11 +3,11 @@
 exports[`Button snapshot testing 1`] = `
 .c0 {
   background-color: #1EA4CE;
+  color: #fff;
   border: none;
   font-weight: 600;
-  color: #fff;
-  padding: 15px;
-  border-radius: 6px;
+  padding: 6px 16px;
+  border-radius: 2px;
   cursor: pointer;
   min-width: 85px;
   min-height: 32px;
@@ -15,6 +15,7 @@ exports[`Button snapshot testing 1`] = `
 
 <button
   className="c0"
+  color="#fff"
 >
   Button
 </button>

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductListingTable snapshot testing 1`] = `
+.c0 {
+  background-color: #fff;
+  box-shadow: 0px 4px 24px rgba(93,62,188,0.04);
+  border-radius: 2px;
+  padding: 20px;
+  margin-top: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 608px;
+  gap: 20px 24px;
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c0 {
+    width: 100%;
+    display: block;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;

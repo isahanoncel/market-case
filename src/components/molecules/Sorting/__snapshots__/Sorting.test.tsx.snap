@@ -9,7 +9,7 @@ exports[`Sorting snapshot testing 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 24px 0 0 0;
+  margin: 0 0 24px 0;
 }
 
 .c1 {
@@ -35,6 +35,7 @@ exports[`Sorting snapshot testing 1`] = `
   margin-top: 12px;
   padding: 24px;
   max-height: 184px;
+  max-width: 296px;
   overflow-y: scroll;
 }
 
@@ -78,6 +79,12 @@ exports[`Sorting snapshot testing 1`] = `
 @media (min-width:0px) and (max-width:768px) {
   .c0 {
     height: auto;
+  }
+}
+
+@media (min-width:0px) and (max-width:768px) {
+  .c2 {
+    max-width: 100%;
   }
 }
 
