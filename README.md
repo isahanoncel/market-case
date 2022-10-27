@@ -24,5 +24,5 @@ URL to access preview: <a target="_blank" href="https://market-case.netlify.app"
 </ul>
 
 ## In the project directory, you can run:
-npm run start
+npm run start <br>
 npm run storybook
