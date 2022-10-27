@@ -5,11 +5,11 @@ I'm testing our components with react-test-renderer for their snapshots. <br>
 Also project has got a storybook package, all you need to do is npm run  storybook || yarn storybook then you can see all of our ui kit.
 <br>
 <div style="margin:10px 0;font-weight:bold;">
-<i>-This case is supporting with typescript.</i>
+<i>-This case is supporting with typescript.</i> <br>
+<i>-Using eslint airbnb config.</i>
 </div>
-
-
-URL to access preview: <a href="https://market-case.netlify.app">market-case.netlify.app</a>
+<br>
+URL to access preview: <a target="_blank" href="https://market-case.netlify.app">market-case.netlify.app</a>
 
 ## Packages
 <ul>
@@ -20,7 +20,9 @@ URL to access preview: <a href="https://market-case.netlify.app">market-case.net
 <li>storybook</li>
 <li>testing-library/react</li>
 <li>husky</li>
+<li>lodash</li>
 </ul>
 
 ## In the project directory, you can run:
 npm run start
+npm run storybook
